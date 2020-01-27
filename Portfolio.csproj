@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <Folder Include="Models\Data\" />
+    <Folder Include="obj\Debug\netcoreapp3.1\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="79.0.3945.3600" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <Compile Remove="Models\Data\UsersContext.cs" />
+    <Compile Remove="Migrations\Users\20200122220628_InitialCreate.cs" />
+    <Compile Remove="Migrations\Users\20200122220628_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\Users\UsersContextModelSnapshot.cs" />
+    <Compile Remove="Models\Users.cs" />
+    <Compile Remove="Controllers\UsersController.cs" />
+    <Compile Remove="Views\Account\Register.cshtml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Users.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Users\Edit.cshtml" />
+    <Content Remove="Views\Users\Delete.cshtml" />
+    <Content Remove="Views\Users\Create.cshtml" />
+    <Content Remove="Views\Users\Index.cshtml" />
+    <Content Remove="Views\Users\Details.cshtml" />
+  </ItemGroup>
+</Project>

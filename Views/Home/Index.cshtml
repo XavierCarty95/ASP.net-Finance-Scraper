@@ -1,0 +1,13 @@
+﻿
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Welcom Back Scrape Some Stocks or View Recent Stocks ? </p>
+        <p><input type="submit" value="Scrape" onclick="location.href='@Url.Action("Scrapes", "Home")'" class="btn btn-primary btn-lg"></p>
+        <p><input type="submit" value="Recent" onclick="location.href='@Url.Action("Recent", "Stock")'" class="btn btn-primary btn-lg"></p>
+    </div>
