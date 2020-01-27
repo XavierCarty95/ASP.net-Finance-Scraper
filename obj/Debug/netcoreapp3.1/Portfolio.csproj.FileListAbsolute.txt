@@ -188,3 +188,6 @@
 /Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Application/Create.cshtml.g.cs
 /Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
 /Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Stock/Recent.cshtml.g.cs
+/Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Admistration/CreateRole.cshtml.g.cs
+/Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Admistration/ListRoles.cshtml.g.cs
+/Users/xaviercarty/Projects/Portfolio/Portfolio/obj/Debug/netcoreapp3.1/Razor/Views/Home/About.cshtml.g.cs

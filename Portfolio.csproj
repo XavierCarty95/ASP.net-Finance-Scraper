@@ -10,6 +10,7 @@
     <Folder Include="Models\Data\" />
     <Folder Include="obj\Debug\netcoreapp3.1\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\Admistration\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
@@ -39,6 +40,7 @@
     <Compile Remove="Models\Users.cs" />
     <Compile Remove="Controllers\UsersController.cs" />
     <Compile Remove="Views\Account\Register.cshtml.cs" />
+    <Compile Remove="Views\Administration\CreateRole.cshtml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Users.db" />
@@ -49,5 +51,6 @@
     <Content Remove="Views\Users\Create.cshtml" />
     <Content Remove="Views\Users\Index.cshtml" />
     <Content Remove="Views\Users\Details.cshtml" />
+    <Content Remove="Views\Administration\CreateRole.cshtml" />
   </ItemGroup>
 </Project>
