@@ -18,10 +18,10 @@ namespace Portfolio
         public static void ScrapeDat(IServiceProvider serviceProvider)
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("no-sandbox");
-            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArguments("no-sandbox", "--disable-dev-shm-usage");
+            
 
-            IWebDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
+            IWebDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(6));
             driver.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(1200));
 
             driver.Navigate().GoToUrl("https://finance.yahoo.com/");
@@ -113,6 +113,7 @@ namespace Portfolio
                                         {
                                             Symbol = SymbolData,
                                             LastPrice = LastPriceData,
+                                            DateScrapped = DateTime.Now,
                                             Change = ChangeData,
                                             ChangeRate = ChangeRateData,
                                             Currency = CurrencyData,
@@ -125,7 +126,7 @@ namespace Portfolio
                                         }
 
 
-                                    );
+                                    ); 
                     context.SaveChanges();
 
                 }

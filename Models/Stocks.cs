@@ -10,10 +10,7 @@ namespace Portfolio.Models
         public int ID { get; set; }
         public string Symbol { get; set; }
         public string LastPrice { get; set; }
-        [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
-
-        [DataMember]
-        public DateTime? DateScrapped { get; set; }
+        public DateTime DateScrapped { get; set; }
         public string Change { get; set; }
         public string ChangeRate { get; set; }
         public string Currency { get; set; }
